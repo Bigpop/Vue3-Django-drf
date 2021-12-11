@@ -22,8 +22,6 @@ config = None
 with open(os.path.join(BASE_DIR, 'website/config.json')) as f:
     config = json.load(f)
 
-print(config['SECRET_KEY'])
-print(type(config['DATABASES']))
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/2.2/howto/deployment/checklist/
 
