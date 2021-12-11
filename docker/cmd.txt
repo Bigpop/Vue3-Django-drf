@@ -1,0 +1,8 @@
+
+docker build -t website .
+docker run -it --net=host website /bin/bash
+
+docker run -it  website /bin/bash
+
+docker run -it  ubuntu /bin/bash
+ping 180.76.5.4

@@ -1,0 +1,19 @@
+FROM ubuntu
+
+RUN apt-get update 
+RUN apt-get install python3 -y
+RUN apt-get install python3-pip -y
+RUN apt-get install libmysqlclient-dev -y
+RUN apt-get install net-tools -y
+RUN apt-get install iputils-ping -y
+RUN apt-get install nginx -y
+#RUN apt-get install mysql-server -y
+
+RUN pip3 install -i https://mirrors.aliyun.com/pypi/simple/ Django 
+RUN pip3 install -i https://mirrors.aliyun.com/pypi/simple/ mysqlclient
+RUN pip3 install -i https://mirrors.aliyun.com/pypi/simple/ uwsgi
+
+RUN pip3 install -i https://mirrors.aliyun.com/pypi/simple/ django-ckeditor
+RUN pip3 install -i https://mirrors.aliyun.com/pypi/simple/ django-tinymce
+RUN pip3 install -i https://mirrors.aliyun.com/pypi/simple/ Pillow
+
