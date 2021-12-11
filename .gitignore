@@ -2,7 +2,8 @@
 DS_Store
 
 # My configurations:
-/website/website/config.json
+website/website/config.json
+
 /frontend/.git
 
 # Byte-compiled / optimized / DLL files
